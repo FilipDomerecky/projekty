@@ -1,0 +1,41 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+    gap: 0;
+    border: 4px solid #8b4513; /* Hnědý okraj kolem celé šachovnice */
+    border-radius: 8px; /* Zaoblení rohů pro lepší vzhled */
+}
+
+.square {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #7f4500; /* Okraje jednotlivých políček s tmavším hnědým odstínem */
+    font-size: 32px; /* Zvětšíme font pro figurky */
+    cursor: pointer;
+}
+
+.square.black {
+    background-color: #8b4513; /* Tmavě hnědá pro černá pole */
+}
+
+.square.white {
+    background-color: #d2b48c; /* Světle hnědá pro bílá pole (barva "tan") */
+}
+
+.square.highlight {
+    background-color: #90ee90; /* Světle zelená pro označená pole */
+}
