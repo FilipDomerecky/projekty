@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hra Šibenice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game">
+        <h1>Hra Šibenice</h1>
+        <p>Hádaj slovo! Máš 6 pokusů.</p>
+        <div id="wordDisplay"></div>
+        <div>
+            <input type="text" id="guessInput" maxlength="1" placeholder="Zadej písmeno" />
+            <button id="guessButton">Hádaj</button>
+        </div>
+        <p id="message"></p>
+        <p>Počet pokusů: <span id="attempts">0</span></p>
+        <div id="hangmanDrawing">
+            <canvas id="hangmanCanvas" width="150" height="200"></canvas>
+        </div>
+        <button id="resetButton" style="display:none;">Začít novou hru</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
